@@ -1,0 +1,314 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Solway", serif;
+}
+#container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.logo {
+    width: 60px;
+}
+
+.listItems {
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+    
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    /* position: relative;
+    transition: all .45s ease; */
+}
+
+.links:hover{
+    color: blueviolet;
+    text-decoration: underline;
+    /* transform: translateY(-3px) translateX(-5px); */
+}
+
+
+/* NEXT SECTION */
+
+
+.homeContent {
+    margin: 13% 0px 0px 8%;
+}
+
+#username {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Mukta", sans-serif;
+}
+
+#lname {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Mukta", sans-serif;
+    color: orange;
+}
+
+#userdetails {
+    line-height: 1.2;
+
+}
+
+#download {
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.homeImages {
+    /* display: flex; */
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+
+.group {
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 2s, left 1s;
+}
+
+.homeImages:hover #shape {
+    bottom: 70px;
+}
+
+.homeImages:hover #girl {
+    left: 40%;
+}
+
+/* ---------About ----------*/
+
+#about {
+    margin: 25% 8% 0px 8%;
+}
+
+.sectionHead {
+    text-align: center;
+    font-size: 30px;
+}
+
+.subHead {
+    font-size: 20px;
+    color: greenyellow;
+}
+
+.aboutBody {
+    margin-top: 20px;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    align-items: center;
+}
+
+.img1 {
+    width: 95%;
+}
+
+.aboutContent {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.informations {
+    margin-top: 1.3rem;
+}
+
+.infoBox {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+
+/* .infoBox>span {
+    margin-left: 5rem;
+} */
+
+span{
+    margin-left: 10px;
+}
+
+
+/* skill */
+
+
+#skill {
+    margin: 8% 8% 0px 8%;
+}
+
+.skillContent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 20px;
+}
+
+.bars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+}
+
+.barHead,.barPercent {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.baseBar {
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.htmlBar {
+    background-color: orange;
+    width: 92%;
+}
+
+.cssBar {
+    background-color: orange;
+    width: 86%;
+}
+ 
+.jsBar {
+    background-color: orange;
+    width: 73%;
+}
+
+.reactBar {
+    background-color: orange;
+    width: 62%;
+}
+
+.skillImage{
+    padding: 35px 0px 0px 100px;
+}
+
+#contact{
+    margin: 8% 8% 0px 8%;
+}
+
+.iconCollections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 10px;
+}
+
+.brands{
+    color: black;
+    font-size: 2rem;
+}
+
+.icon:hover{
+    background-image: linear-gradient(to bottom right, red, yellow,green);
+}
+
+.icon:hover .brands{
+    color: white;
+    /* animation */
+    animation: rotate 3s;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate (30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+
+footer{
+  margin-top: 8%;
+  /* background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+#copyright{
+    text-align: center;
+    font-weight: 600;
+}
+
+.upArrow{
+    float: right;
+    margin: -30px 20px 40px 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: azure;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px;
+}
